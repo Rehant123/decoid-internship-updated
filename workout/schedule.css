@@ -1,0 +1,7 @@
+.rounded-full {
+    background: linear-gradient(to right, #E9B1E0, #D3A5F2);
+}
+
+.rounded-full span {
+    color: white;
+} 

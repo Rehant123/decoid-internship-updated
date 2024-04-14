@@ -1,0 +1,24 @@
+/* Tailwind classes */
+.space-y-4 {
+    @apply space-y-4;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .form-checkbox {
+    @apply form-checkbox h-5 w-5 text-indigo-600 transition duration-150 ease-in-out;
+  }
+  
+  .ml-2 {
+    margin-left: 0.5rem;
+  }
+  
+  .text-gray-700 {
+    color: #4a5568;
+  }

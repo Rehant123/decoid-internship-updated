@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Goals</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="workoutOption.css">
+    <style>
+        /* Smooth checkbox animation */
+        input[type="checkbox"] {
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Skip button styles */
+        .skip-button {
+            background-color: #FF6B6B;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .skip-button:hover {
+            background-color: #FF4D4D;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="max-w-md mx-auto mt-10">
+        <div class="bg-white rounded-lg">
+            <div class="p-4">
+                <div class="flex items-center justify-between p-4 rounded mb-4" style="background-color: #F1F1F1;">
+                    <label for="weight-loss" class="ml-2 text-gray-700">Weight Loss</label>
+                    <input id="weight-loss" type="checkbox" class="form-checkbox h-5 w-5 accent-pink-500">
+                </div>
+                <div class="flex items-center justify-between p-4 rounded mb-4" style="background-color: #F1F1F1;">
+                    <label for="muscle-gain" class="ml-2 text-gray-700">Muscle Gain</label>
+                    <input id="muscle-gain" type="checkbox" class="form-checkbox h-5 w-5 accent-pink-500">
+                </div>
+                <div class="flex items-center justify-between p-4 rounded mb-4" style="background-color: #F1F1F1;">
+                    <label for="flexibility" class="ml-2 text-gray-700">Flexibility and Mobility</label>
+                    <input id="flexibility" type="checkbox" class="form-checkbox h-5 w-5 accent-pink-500">
+                </div>
+                <div class="flex items-center justify-between p-4 rounded mb-4" style="background-color: #F1F1F1;">
+                    <label for="general-fitness" class="ml-2 text-gray-700">General Fitness</label>
+                    <input id="general-fitness" type="checkbox" class="form-checkbox h-5 w-5 accent-pink-500">
+                </div>
+                <div class="flex items-center justify-between p-4 rounded mb-4" style="background-color: #F1F1F1;">
+                    <label for="event-training" class="ml-2 text-gray-700">Event-specific training</label>
+                    <input id="event-training" type="checkbox" class="form-checkbox h-5 w-5 accent-pink-500">
+                </div>
+                <div class="flex items-center justify-between p-4 rounded mb-4" style="background-color: #F1F1F1;">
+                    <label for="mindfulness" class="ml-2 text-gray-700">Mindfulness and Mental Health</label>
+                    <input id="mindfulness" type="checkbox" class="form-checkbox h-5 w-5 accent-pink-500">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed bottom-0 left-0 right-0 p-4 flex justify-center">
+        <button id="skip-button" class="skip-button">Skip</button>
+    </div>
+  <script src = "options.js"></script>
+</body>
+</html>

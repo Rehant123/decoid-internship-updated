@@ -1,0 +1,44 @@
+.illustration {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the container takes up full height */
+}
+#myChart {
+    /* Optional: Add additional styling for the chart canvas */
+    max-width: 100%; /* Ensure the chart canvas is responsive */
+    height: auto; /* Allow the chart canvas to adjust its height */
+} .toggle-btn {
+    display: inline-block;
+    position: relative;
+    width: 40px; /* Adjust width */
+    height: 20px; /* Adjust height */
+    border-radius: 10px; /* Adjust border-radius */
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px; /* Adjust width */
+    height: 16px; /* Adjust height */
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggle-btn {
+    background-color: #2196F3;
+}
+
+input[type="checkbox"]:checked + .toggle-btn::before {
+    transform: translateX(20px); /* Adjust translateX value */
+}
